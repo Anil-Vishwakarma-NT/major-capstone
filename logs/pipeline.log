@@ -1,0 +1,45 @@
+2024-09-09 05:54:36,100 - INFO : PRODUCT SALES PERFORMANCE ANALYSIS.......
+2024-09-09 05:54:36,130 - INFO : reading csv files
+2024-09-09 05:54:44,941 - INFO : Top 10 products on total revenue
+2024-09-09 05:54:52,926 - INFO : Top 10 products on sales volume
+2024-09-09 05:54:54,691 - INFO : Category wise total revenue
+2024-09-09 05:54:56,710 - INFO : Sales volume by Category
+2024-09-09 05:54:57,890 - INFO : Least 10 selling products on total revenue
+2024-09-09 05:54:58,634 - INFO : least 10 products on sales volume
+2024-09-09 05:54:59,484 - INFO : Correlation between price and sales volume
+2024-09-09 05:55:00,860 - INFO : Top 10 products contributing to total revenue
+2024-09-09 05:55:02,411 - INFO : Monthly sales patterns
+2024-09-09 05:55:18,669 - INFO : PRODUCT SALES PERFORMANCE ANALYSIS.......
+2024-09-09 05:55:18,671 - INFO : reading csv files
+2024-09-09 05:55:29,678 - INFO : Top 10 products on total revenue
+2024-09-09 05:55:38,586 - INFO : Top 10 products on sales volume
+2024-09-09 05:55:40,487 - INFO : Category wise total revenue
+2024-09-09 05:55:42,608 - INFO : Sales volume by Category
+2024-09-09 05:55:44,106 - INFO : Least 10 selling products on total revenue
+2024-09-09 05:55:44,912 - INFO : least 10 products on sales volume
+2024-09-09 05:55:45,636 - INFO : Correlation between price and sales volume
+2024-09-09 05:55:47,150 - INFO : Top 10 products contributing to total revenue
+2024-09-09 05:55:48,832 - INFO : Monthly sales patterns
+2024-09-09 05:55:49,855 - INFO : ............................
+2024-09-09 05:59:57,804 - INFO : Top 10 products on total revenue
+2024-09-09 05:59:59,013 - ERROR : invalid operation performed :{e}
+Traceback (most recent call last):
+  File "/tmp/ipykernel_54754/2041649686.py", line 15, in <module>
+    products_revenue_pd.show()
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/bitnami/python/lib/python3.11/site-packages/pandas/core/generic.py", line 6299, in __getattr__
+    return object.__getattribute__(self, name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'DataFrame' object has no attribute 'show'
+2024-09-09 06:08:23,817 - INFO : Top 10 products on total revenue
+2024-09-09 06:08:24,648 - ERROR : invalid operation performed :{e}
+Traceback (most recent call last):
+  File "/tmp/ipykernel_54754/625489338.py", line 15, in <module>
+    products_revenue_pd.show()
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/bitnami/python/lib/python3.11/site-packages/pandas/core/generic.py", line 6299, in __getattr__
+    return object.__getattribute__(self, name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'DataFrame' object has no attribute 'show'
+2024-09-09 06:08:50,863 - INFO : Top 10 products on total revenue
+2024-09-09 06:09:28,955 - INFO : Top 10 products on total revenue
