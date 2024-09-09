@@ -238,4 +238,3 @@ try:
     plt.show()
 except Exception as e:
     logging.error("invalid operation performed :{e}", exc_info=True)
-

@@ -2,7 +2,9 @@ import os
 import shutil
 import logging
 from pyspark.sql import SparkSession
+
 from pyspark.sql.types import StructType, StructField, StringType, DoubleType, DateType,BooleanType,IntegerType
+
 
 
 # Creating Spark session
@@ -32,6 +34,7 @@ def read_csv_files(file_path):
 
 
 
+
 # Save cleaned dataFrame as a single CSV file
 def save_as_single_csv(df, output_path):
     try:
@@ -43,10 +46,13 @@ def save_as_single_csv(df, output_path):
         shutil.move(os.path.join(temp_dir, temp_csv_file), output_path)
         # Clean up temporary directory
         shutil.rmtree(temp_dir)
+
+        
         # logging.info(f"DataFrame saved successfully as {output_path}")
     except Exception as e:
         logging.error(f"Error saving DataFrame to {output_path}: {e}", exc_info=True)
         raise
+
 
 
 def get_appropriate_schema(file_path):
@@ -123,3 +129,4 @@ def get_schemas():
         raise
         
         
+
