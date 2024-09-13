@@ -2,15 +2,14 @@ import os
 import shutil
 import logging
 from pyspark.sql import SparkSession
-
 from pyspark.sql.types import StructType, StructField, StringType, DoubleType, DateType,BooleanType,IntegerType
-
 
 
 # Creating Spark session
 def spark_session():
     try:
         spark = SparkSession.builder.appName("load_data").getOrCreate()
+        spark.sparkContext.setLogLevel("ERROR")  # to avoid unwanted warnings and logs
         return spark
     except Exception as e:
         logging.error(f"Error creating Spark session: {e}", exc_info=True)
@@ -22,6 +21,7 @@ def spark_session():
 def read_csv_files(file_path):
     try:
         spark = spark_session()
+        spark.sparkContext.setLogLevel("ERROR")
         schema, header = get_appropriate_schema(file_path)
         df = spark.read.format("csv") \
             .option("header",header) \
@@ -32,6 +32,10 @@ def read_csv_files(file_path):
         logging.error(f"Error reading CSV file at {file_path}: {e}", exc_info=True)
         raise
 
+    except Exception as e:
+        logging.error(f"Error reading CSV file at {file_path}: {e}", exc_info=True)
+        raise
+        
 
 
 
@@ -46,13 +50,10 @@ def save_as_single_csv(df, output_path):
         shutil.move(os.path.join(temp_dir, temp_csv_file), output_path)
         # Clean up temporary directory
         shutil.rmtree(temp_dir)
-
-        
         # logging.info(f"DataFrame saved successfully as {output_path}")
     except Exception as e:
         logging.error(f"Error saving DataFrame to {output_path}: {e}", exc_info=True)
         raise
-
 
 
 def get_appropriate_schema(file_path):
@@ -129,4 +130,3 @@ def get_schemas():
         raise
         
         
-

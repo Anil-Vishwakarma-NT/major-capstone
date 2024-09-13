@@ -1,11 +1,7 @@
 import sys
 import os
-import logging
-
 sys.path.append(os.path.abspath('..'))
-
-# Set up logging
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+import logging
 
 # Verifying data accuracy between two dataFrames
 def verify_data_accuracy(data_dictionary):
