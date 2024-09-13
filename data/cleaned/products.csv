@@ -1,51 +1,52 @@
 Product_ID,Product_Name,Category,Price
-7,charge,Home,1177
-36,movie,Electronics,1017
-6,process,Electronics,1449
-15,same,Clothing,1517
-21,contain,Clothing,850
-9,number,Clothing,1868
-28,really,Beauty,991
-25,left,Electronics,277
-43,difficult,Home,1903
-10,what,Home,243
-5,though,Electronics,1738
-27,student,Electronics,145
-39,check,Home,1190
-47,truth,Electronics,706
-17,outside,Clothing,295
-26,effort,Clothing,631
-22,west,Clothing,842
-32,type,unknown,1753
-14,onto,Clothing,413
-30,feel,Beauty,542
-24,affect,Beauty,976
-13,out,Beauty,456
-46,population,Home,1418
-2,why,Electronics,333
-3,strategy,Home,645
-16,stay,Electronics,249
-18,tend,Home,417
-35,support,Electronics,992
-31,father,Beauty,900
-23,now,Clothing,1541
-44,friend,Home,517
-29,fear,Clothing,1379
-38,east,unknown,506
-34,hope,Home,100
-20,once,Electronics,1344
-41,place,Home,544
-19,open,Beauty,777
-37,because,Electronics,1990
-45,item,Beauty,897
-4,interview,unknown,290
-40,themselves,Beauty,510
-48,general,Home,338
-49,account,Electronics,802
-42,town,Beauty,802
-33,well,Home,602
-11,again,Clothing,1050
-8,understand,Clothing,1585
-1,him,Home,411
-50,money,Home,1012
-12,place,Electronics,223
+37,Soundbar,Electronics,1990.0
+29,Scarf,Clothing,1379.0
+47,Router,Electronics,706.0
+35,Speaker,Electronics,992.0
+49,Printer,Electronics,802.0
+39,Wardrobe,Home,1190.0
+18,Lamp,Home,417.0
+25,Smartwatch,Electronics,277.0
+21,Dress,Clothing,850.0
+26,Skirt,Clothing,631.0
+3,Dining Table,Home,645.0
+33,Coffee Table,Home,602.0
+45,Hair Dryer,Beauty,897.0
+19,Lipstick,Beauty,777.0
+40,Moisturizer,Beauty,510.0
+20,Headphones,Electronics,1344.0
+28,Mascara,Beauty,991.0
+10,Bookshelf,Home,243.0
+17,Shirt,Clothing,295.0
+48,Pillow,Home,338.0
+7,Chair,Home,1177.0
+1,Sofa Set,Home,411.0
+5,Mobile Phone,Electronics,1738.0
+23,Coat,Clothing,1541.0
+16,Tablet,Electronics,249.0
+27,Camera,Electronics,145.0
+43,Air Conditioner,Home,1903.0
+2,Laptop,Electronics,333.0
+6,Television,Electronics,1449.0
+50,Fan,Home,1012.0
+21,Blazer,Clothing,850.0
+4,Vacuum Cleaner,other,290.0
+15,Blazer,Clothing,1517.0
+8,T-Shirt,Clothing,1585.0
+11,Jeans,Clothing,1050.0
+12,Smartphone,Electronics,223.0
+31,Shampoo,Beauty,900.0
+13,Face Cream,Beauty,456.0
+22,Sweater,Clothing,842.0
+14,Shoes,Clothing,413.0
+42,Hand Cream,Beauty,802.0
+44,Table,Home,517.0
+41,Smart Light Bulb,Home,544.0
+24,Foundation,Beauty,976.0
+9,Jacket,Clothing,1868.0
+32,Gaming Console,other,1753.0
+36,Blu-ray Player,Electronics,1017.0
+34,Desk Lamp,Home,100.0
+46,Books,Home,1418.0
+38,E-Reader,other,506.0
+30,Perfume,Beauty,542.0

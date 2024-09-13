@@ -9,6 +9,7 @@ from pyspark.sql.types import StructType, StructField, StringType, DoubleType, D
 def spark_session():
     try:
         spark = SparkSession.builder.appName("load_data").getOrCreate()
+        spark.sparkContext.setLogLevel("ERROR")  # to avoid unwanted warnings and logs
         return spark
     except Exception as e:
         logging.error(f"Error creating Spark session: {e}", exc_info=True)
@@ -20,6 +21,7 @@ def spark_session():
 def read_csv_files(file_path):
     try:
         spark = spark_session()
+        spark.sparkContext.setLogLevel("ERROR")
         schema, header = get_appropriate_schema(file_path)
         df = spark.read.format("csv") \
             .option("header",header) \
@@ -29,6 +31,11 @@ def read_csv_files(file_path):
     except FileNotFoundError as e:
         logging.error(f"Error reading CSV file at {file_path}: {e}", exc_info=True)
         raise
+
+    except Exception as e:
+        logging.error(f"Error reading CSV file at {file_path}: {e}", exc_info=True)
+        raise
+        
 
 
 
