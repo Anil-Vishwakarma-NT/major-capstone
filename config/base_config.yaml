@@ -1,0 +1,72 @@
+# Define the path variables
+RAW_DATA_PATH: "/spark-data/capstone_crm/data/raw_data/"
+CLEANED_DATA_DIR: "/spark-data/capstone_crm/data/cleaned_data"
+
+# Define file schemas
+file_schemas:
+  customers:
+    - name: "Customer_ID"
+      type: "String"
+    - name: "Name"
+      type: "String"
+    - name: "Email"
+      type: "String"
+    - name: "Phone"
+      type: "String"
+    - name: "Country"
+      type: "String"
+
+  products:
+    - name: "Product_ID"
+      type: "Integer"
+    - name: "Product_Name"
+      type: "String"
+    - name: "Category"
+      type: "String"
+    - name: "Price"
+      type: "Double"
+
+  transactions:
+    - name: "Transaction_ID"
+      type: "String"
+    - name: "Customer_ID"
+      type: "String"
+    - name: "Product_ID"
+      type: "Integer"
+    - name: "Date"
+      type: "Date"
+    - name: "Amount"
+      type: "Double"
+    - name: "Sales_Rep_ID"
+      type: "String"
+
+  interactions:
+    - name: "Interaction_ID"
+      type: "String"
+    - name: "Customer_ID"
+      type: "String"
+    - name: "Interaction_Date"
+      type: "Date"
+    - name: "Interaction_Type"
+      type: "String"
+    - name: "Issue_Resolved"
+      type: "Boolean"
+
+  sales_team:
+    - name: "Sales_Rep_ID"
+      type: "String"
+    - name: "Name"
+      type: "String"
+    - name: "Region"
+      type: "String"
+    - name: "Sales_Target"
+      type: "Double"
+    - name: "Sales_Achieved"
+      type: "Double"
+
+  country_codes:
+    - name: "Country"
+      type: "String"
+    - name: "Country_Code"
+      type: "String"
+      

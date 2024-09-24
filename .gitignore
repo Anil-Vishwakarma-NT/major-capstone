@@ -1,6 +1,3 @@
-# Ignore all .ipynb files in the etl folder
-etl/*.ipynb
-
 # Ignore the entire data folder
 data/
 
@@ -10,4 +7,4 @@ utils/__pycache__/
 #logs comment
 logs
 
-reports/
+
